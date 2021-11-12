@@ -5,6 +5,8 @@ import AuthLayout from "./layouts/AuthLayout";
 import Home from "./pages/Home.js";
 import Login from "./pages/Login.js";
 import SignUp from "./pages/SignUp";
+import UserSignUp from "./pages/UserSignUp";
+import AgentSignUp from "./pages/UserSignUp";
 import NotFound from "./pages/NotFound.js";
 
 const routes = () => (
@@ -15,6 +17,8 @@ const routes = () => (
     </Route>
     <Route element={<AuthLayout />}>
       <Route path="/login" element={<Login />} />
+      <Route path="/user-signup" element={<UserSignUp />} />
+      <Route path="/agent-signup" element={<AgentSignUp />} />
     </Route>
     <Route element={<NotFound />} />
   </Routes>
